@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário e Lista de Registros</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/brigadeirologo.jpg" width ="70" alt="Doces da Akemi">
+        </div>
+        <h1>Doces da Akemi</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form id="registroForm">
+            <label for="texto">Nome completo:</label>
+            <input type="text" id="texto" name="texto" required>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+            
+            <label for="numero">Número do telefone:</label>
+            <input type="number" id="numero" name="numero" required>
+            
+            <label for="checkbox">Receber notificações:</label>
+            <input class="esquerda" type="checkbox" id="checkbox" name="checkbox"/>
+            
+            <label for="radio">Cliente fidelidade:</label>
+            <input class="esquerda" type="radio" id="radio" name="radio" />
+            
+            <button type="submit">Salvar</button>
+            <button type="reset">Limpar</button>
+        </form>
+        
+        <table id="registros">
+            <thead>
+                <tr>
+                    <th>Nome completo</th>
+                    <th>Data</th>
+                    <th>Número do telefone</th>
+                    <th>Receber notificações</th>
+                    <th>Cliente fidelidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Registros serão adicionados dinamicamente aqui -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
